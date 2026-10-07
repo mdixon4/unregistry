@@ -341,7 +341,7 @@ is_docker_vm_proxy_needed() {
     fi
 
     # Fallback: detect Docker Desktop, Rancher Desktop, and Colima on Linux.
-    [[ "${info}" =~ Docker\ Desktop|rancher-desktop|colima ]] && return 0
+    [[ "${info}" =~ Docker\ Desktop|Rancher\ Desktop|rancher-desktop|colima ]] && return 0
     return 1
 }
 
